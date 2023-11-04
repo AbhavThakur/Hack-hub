@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hack-hub</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="hack-hub">Hack-hub</h1>
+<p>A social media platform for sharing your memory with Developers.</p>
+<p>Currently, two official plugins are available:</p>
+<ul>
+<li><a href="https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.html">@vitejs/plugin-react</a> uses <a href="https://babeljs.io/">Babel</a> for Fast Refresh</li>
+<li><a href="https://github.com/vitejs/vite-plugin-react-swc">@vitejs/plugin-react-swc</a> uses <a href="https://swc.rs/">SWC</a> for Fast Refresh</li>
+</ul>
+<h2 id="expanding-the-eslint-configuration">Expanding the ESLint configuration</h2>
+<p>If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:</p>
+<ul>
+<li>Configure the top-level <code>parserOptions</code> property like this:</li>
+</ul>
+<pre><code class="language-js">   <span class="hljs-attr">parserOptions</span>: {
+    <span class="hljs-attr">ecmaVersion</span>: <span class="hljs-string">&#x27;latest&#x27;</span>,
+    <span class="hljs-attr">sourceType</span>: <span class="hljs-string">&#x27;module&#x27;</span>,
+    <span class="hljs-attr">project</span>: [<span class="hljs-string">&#x27;./tsconfig.json&#x27;</span>, <span class="hljs-string">&#x27;./tsconfig.node.json&#x27;</span>],
+    <span class="hljs-attr">tsconfigRootDir</span>: __dirname,
+   },
+</code></pre>
+<ul>
+<li>Replace <code>plugin:@typescript-eslint/recommended</code> to <code>plugin:@typescript-eslint/recommended-type-checked</code> or <code>plugin:@typescript-eslint/strict-type-checked</code></li>
+<li>Optionally add <code>plugin:@typescript-eslint/stylistic-type-checked</code></li>
+<li>Install <a href="https://github.com/jsx-eslint/eslint-plugin-react">eslint-plugin-react</a> and add <code>plugin:react/recommended</code> &amp; <code>plugin:react/jsx-runtime</code> to the <code>extends</code> list</li>
+</ul>
+
+        
+        
+    </body>
+    </html>
