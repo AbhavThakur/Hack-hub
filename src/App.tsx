@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import AuthLayout from './auth/AuthLayout';
 import SigninForm from './auth/forms/SigninForm';
 import SignupForms from './auth/forms/SignupForms';
-import './global.css';
+import './globals.css';
 import RootLayout from './root/RootLayout';
 import { Home } from './root/pages';
 
